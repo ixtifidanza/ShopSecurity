@@ -1,0 +1,117 @@
+.header {
+    &-top {
+        padding: 17px 0;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 9;
+        background: $white;
+        border-bottom: 1px solid $main-black;
+
+        &__lang {
+            display: flex;
+            justify-content: center;
+
+            &--item:first-child {
+                margin-right: 20px;
+            }
+        }
+
+        &__links {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+
+            & li {
+                margin-right: 45px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &__contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &--link {
+                font-size: 19px;
+                font-weight: bold;
+                margin-left: 14px;
+            }
+        }
+    }
+
+    &-nav {
+        margin-top: 80px;
+    }
+
+    &__first {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    &__search {
+        position: relative;
+        margin-left: 100px;
+
+        &--input {
+            display: flex;
+            width: 100%;
+            padding: 10px 0 10px 16px;
+
+            border-radius: 4px;
+            border: 1px solid $border;
+            outline: none;
+            transition: all .3s ease;
+
+            &:focus {
+                border-color: $yellow;
+            }
+
+            &::placeholder {
+                font-size: 12px;
+                font-weight: 300;
+            }
+        }
+
+        &--logo {
+            position: absolute;
+            top: 35%;
+            right: 5%;
+        }
+    }
+
+    &__last {
+        margin-left: 40px;
+        &--links {
+            display: flex;
+            align-items: center;
+            list-style: none;
+
+            & li {
+                margin-right: 20px;
+                display: flex;
+                align-items: center;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                & a {
+                    margin-left: 5px;
+                }
+            }
+
+        }
+    }
+
+}

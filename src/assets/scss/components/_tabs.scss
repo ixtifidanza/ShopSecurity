@@ -1,0 +1,30 @@
+.tabs {
+    &__caption {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        cursor: pointer;
+        margin-bottom: 55px;
+
+        & li {
+            font-size: 22px;
+            color: $main-black;
+        }
+
+        & li:nth-child(2) {
+            margin: 0 85px;
+        }
+    }
+
+    &__active {
+        border-bottom: 1px solid $main-black;
+    }
+
+    &__content {
+        display: none; /* по умолчанию прячем все блоки */
+    }
+
+    &__content--active {
+        display: block; /* по умолчанию показываем нужный блок */
+    }
+}

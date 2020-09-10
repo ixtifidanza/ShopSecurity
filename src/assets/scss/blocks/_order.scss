@@ -1,0 +1,24 @@
+.order {
+    &__title {
+        margin-top: 70px;
+        line-height: 1.5;
+        margin-bottom: 34px;
+    }
+
+    &__text {
+        font-size: 18px;
+        color: $main-black;
+        margin-bottom: 100px;
+    }
+
+    &__btn {
+        background: $yellow;
+        color: $white;
+
+        &:hover {
+            background: $bg-grey;
+            color: $main-black;
+        }
+    }
+
+}
