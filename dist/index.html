@@ -12,10 +12,10 @@
 <body>
     <header class="header">
 
-        <div class="header-top" style="display: none;">
+        <div class="header-top">
             <div class="container">
                 <div class="row al-center">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-sm-12 col-xs-6">
                         <div class="header-top__lang">
                             <a class="header-top__lang--item link" href="#">Узбекский</a>
                             <a class="header-top__lang--item link active" href="#">Русский</a>
@@ -37,7 +37,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-sm-12 col-xs-6">
                         <div class="header-top__contact">
                             <img class="header-top__contact--logo" src="assets/img/call.svg" alt="call">
                             <a class="header-top__contact--link link" href="tel:+998999876554">+99899 987 65 54</a>
@@ -49,10 +49,10 @@
 
 
         <div class="container">
-            <div class="header-nav" style="display: none;">
+            <div class="header-nav">
                 <div class="row al-center">
 
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-4 col-sm-12">
                         <div class="header__first">
                             <a href="#">
                                 <img class="header__logo" src="assets/img/LOGO.png" alt="logo">
@@ -63,26 +63,32 @@
                             <h3 class="header__title">Каталог</h3>
                         </div>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 col-md-4 col-sm-12">
                         <div class="header__search">
                             <input class="header__search--input" type="text" placeholder="Поиск по сайту">
                             <img class="header__search--logo" src="assets/img/search.svg" alt="search">
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="header__last">
                             <ul class="header__last--links">
                                 <li>
-                                    <img src="assets/img/sign_in.svg" alt="">
-                                    <a class="link" href="#">Войти</a>
+                                    <a class="link" href="#">
+                                        <img src="assets/img/sign_in.svg" alt="">
+                                        <span>Войти</span>
+                                    </a>
                                 </li>
                                 <li>
+                                    <a class="link" href="#">
                                     <img src="assets/img/favorite.svg" alt="">
-                                    <a class="link" href="#">Избранное</a>
+                                    <span>Избранное</span>
+                                </a>
                                 </li>
                                 <li>
+                                    <a class="link" href="#">
                                     <img src="assets/img/basket.svg" alt="">
-                                    <a class="link" href="#">Корзина</a>
+                                    <span>Корзина</span>
+                                </a>
                                 </li>
                             </ul>
                         </div>
@@ -90,6 +96,364 @@
 
                 </div>
             </div>
+
+            <section class="megamenu" style="display: none;">
+                <aside class="aside-megamenu">
+                    <nav class="nav nav-pills">
+                        <!-- меняешь названия и соответствующий href(через него можно включать табы, код написать не сложно, тупо switch case) -->
+                        <a class="nav-link" href="#megamenu_1">Таб 1</a>
+                        <a class="nav-link" href="#megamenu_2">Таб 2</a>
+                        <a class="nav-link" href="#megamenu_3">Таб 1</a>
+                        <a class="nav-link" href="#megamenu_1">Таб 1</a>
+                        <a class="nav-link" href="#megamenu_1">Таб 1</a>
+                        <a class="nav-link" href="#megamenu_1">Таб 1</a>
+                        <a class="nav-link" href="#megamenu_1">Таб 1</a>
+                        <a class="nav-link" href="#megamenu_1">Таб 1</a>
+                        <a class="nav-link" href="#megamenu_1">Таб 1</a>
+                    </nav>
+                </aside>
+                <div class="sub-megamenu">
+                    <div class="tab-content">
+                        <!--  -->
+                        <div class="tab-pane" id="megamenu_1">
+                            <!-- mega submenu-content -->
+    
+                            <ul class="megasubmenu-content-wrap">
+                                <li>
+                                    <a href="#">
+                                        <strong>Телевизоры</strong></a>
+                                    <a class="link-submenu" href="#">Sony</a>
+                                    <a class="link-submenu" href="#">Samsung</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Аудио</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Видеотехника</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Медиаплеер</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Диктофоны</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Фото, видео</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Игровые приставки</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                            </ul>
+                            <!-- mega submenu-content //end -->
+                        </div>
+                        <div class="tab-pane" id="megamenu_2">
+                            <!-- mega submenu-content -->
+    
+                            <ul class="megasubmenu-content-wrap">
+                                <li>
+                                    <a href="#">
+                                        <strong>Телевизоры</strong></a>
+                                    <a class="link-submenu" href="#">Iphone</a>
+                                    <a class="link-submenu" href="#">Samsung</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Аудио</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Видеотехника</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Медиаплеер</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Диктофоны</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Фото, видео</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Игровые приставки</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                            </ul>
+                            <!-- mega submenu-content //end -->
+                        </div>
+                        <div class="tab-pane" id="megamenu_3">
+                            <!-- mega submenu-content -->
+    
+                            <ul class="megasubmenu-content-wrap">
+                                <li>
+                                    <a href="#">
+                                        <strong>Телевизоры</strong></a>
+                                    <a class="link-submenu" href="#">Sony</a>
+                                    <a class="link-submenu" href="#">Samsung</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Аудио</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Видеотехника</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Медиаплеер</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Диктофоны</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Фото, видео</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Игровые приставки</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                            </ul>
+                            <!-- mega submenu-content //end -->
+                        </div>
+                        <div class="tab-pane" id="megamenu_1">
+                            <!-- mega submenu-content -->
+    
+                            <ul class="megasubmenu-content-wrap">
+                                <li>
+                                    <a href="#">
+                                        <strong>Телевизоры</strong></a>
+                                    <a class="link-submenu" href="#">Sony</a>
+                                    <a class="link-submenu" href="#">Samsung</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Аудио</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Видеотехника</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Медиаплеер</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Диктофоны</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Фото, видео</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Игровые приставки</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                            </ul>
+                            <!-- mega submenu-content //end -->
+                        </div>
+                        <div class="tab-pane" id="megamenu_1">
+                            <!-- mega submenu-content -->
+    
+                            <ul class="megasubmenu-content-wrap">
+                                <li>
+                                    <a href="#">
+                                        <strong>Телевизоры</strong></a>
+                                    <a class="link-submenu" href="#">Sony</a>
+                                    <a class="link-submenu" href="#">Samsung</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Аудио</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Видеотехника</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Медиаплеер</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Диктофоны</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Фото, видео</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Игровые приставки</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                            </ul>
+                            <!-- mega submenu-content //end -->
+                        </div>
+                        <div class="tab-pane" id="megamenu_1">
+                            <!-- mega submenu-content -->
+    
+                            <ul class="megasubmenu-content-wrap">
+                                <li>
+                                    <a href="#">
+                                        <strong>Телевизоры</strong></a>
+                                    <a class="link-submenu" href="#">Sony</a>
+                                    <a class="link-submenu" href="#">Samsung</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Аудио</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Видеотехника</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Медиаплеер</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Диктофоны</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Фото, видео</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>Игровые приставки</strong></a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                    <a class="link-submenu" href="#">Artel</a>
+                                </li>
+                            </ul>
+                            <!-- mega submenu-content //end -->
+                        </div>
+                    </div>
+                </div>
+                </section>
 
         </div>
         <!-- /.Container -->
