@@ -102,3 +102,49 @@ section {
     top: 0;
     transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
+
+
+@media(max-width: 1200px) {
+    .title {
+        font-size: 40px;
+    }
+    
+    .btn {
+        padding: 14px 25px;
+        font-size: 16px;
+    }
+
+    section {
+        padding-bottom: 90px;
+    }
+}
+
+@media(max-width: 768px) {
+    .title {
+        font-size: 35px;
+    }
+    
+    .btn {
+        padding: 12px 22px;
+        font-size: 15px;
+    }
+
+    section {
+        padding-bottom: 80px;
+    }
+}
+
+@media(max-width: 568px) {
+    .title {
+        font-size: 30px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    section {
+        padding-bottom: 60px;
+    }
+}

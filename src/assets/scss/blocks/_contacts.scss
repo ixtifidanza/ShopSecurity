@@ -45,3 +45,39 @@
     }
 
 }
+
+@media(max-width: 1200px) {
+    .contacts {
+        &__img {
+            display: none;
+        }
+    
+        &__map {
+            & iframe {
+                height: 433px;
+            }
+        }
+    
+        &__info {
+            top: 25%;
+            left: 5%;
+            padding: 30px;
+        }
+    
+        &__title {
+            font-size: 19px!important;
+            margin-bottom: 8px;
+        }
+    
+        &__text {
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+    
+        &__link {
+            display: block;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    }
+}

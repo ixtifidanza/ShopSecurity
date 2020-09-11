@@ -32,6 +32,13 @@
             }
         }
 
+        &__link {
+            transition: color 0.2s linear;
+            &:hover {
+                color: $yellow;
+            }
+        }
+
         &__contact {
             display: flex;
             justify-content: center;
