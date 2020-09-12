@@ -375,10 +375,14 @@ section {
     background-color: #fff;
     border-top: 1px solid #e4e4e4;
     z-index: 50;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.show {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -406,11 +410,12 @@ section {
 
 .aside-megamenu .nav-link {
     padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     font-weight: 500;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    height: 53px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: right;
 }
 
 .aside-megamenu .nav-link.active {
@@ -1019,7 +1024,6 @@ section {
     .megamenu .aside-megamenu {
         width: 100%;
         -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
         padding: 10px;
     }
 

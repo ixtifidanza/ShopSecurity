@@ -64,14 +64,22 @@ $(function() {
 
 
 
-    $('ul.tabs__caption').on('click', 'li:not(.tabs__active)', function() {
-        $(this)
-            .addClass('tabs__active').siblings().removeClass('tabs__active')
-            .closest('div.tabs').find('div.tabs__content').removeClass('tabs__content--active').eq($(this).index()).addClass('tabs__content--active');
-    });
+    $(function() {
+        $("nav.nav").on("click", "a:not(.active)", function() {
+          $(this)
+            .addClass("active")
+            .siblings()
+            .removeClass("active")
+            .closest("section.meamenu")
+            .find("div.tab-pane")
+            .removeClass("active")
+            .eq($(this).index())
+            .addClass("active");
+        });
+      });
 
     $('.burger').click(function() {
+        $('.megamenu').toggleClass('show')
         $('.burger-icon').toggleClass('burger-icon-active');
     })
-
 });
