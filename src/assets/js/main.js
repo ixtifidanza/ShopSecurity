@@ -1,5 +1,27 @@
 $(function () {
 
+  window.onscroll = function() {myFunction()};
+
+  // Get the navbar
+  var navbar = document.getElementById("navbar");
+
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
+  var slider = document.querySelector('.slider');
+  var megamenu = document.querySelector('.megamenu');
+
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky");
+      slider.style.paddingTop = "100px";
+      megamenu.style.top = "12%";
+    } else {
+      navbar.classList.remove("sticky");
+      slider.style.paddingTop = "20px";
+      megamenu.style.top = "23%";
+    }
+  }
 
   var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
@@ -188,5 +210,4 @@ $(function () {
     $('.burger-icon').toggleClass('burger-icon-active');
     $('body').toggleClass('lock');
   })
-
 });

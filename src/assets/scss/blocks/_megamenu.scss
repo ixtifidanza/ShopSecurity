@@ -162,7 +162,7 @@
 
     .megamenu {
         width: 95%;
-        top: 30%;
+        top: 38%;
         overflow-y: scroll;
     }
 
@@ -187,7 +187,7 @@
 
     .megamenu {
         width: 80%;
-        top: 45%;
+        top: 58% !important;
     }
 
 }
@@ -198,7 +198,6 @@
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        top: 170px
     }
     .megamenu .aside-megamenu {
         width: 100%;
@@ -228,7 +227,7 @@
 
     .megamenu {
         width: 80%;
-        top: 45%;
+        top: 40%!important;
     }
 }
 
@@ -242,6 +241,6 @@
     .megamenu {
         padding-right: 20px;
         width: 100%;
-        top: 24%;
+        top: 22% !important;
     }
 }
