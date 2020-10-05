@@ -1,0 +1,104 @@
+.product-card {
+    &__slider {
+        padding-bottom: 50px;
+    }
+
+    &__about {
+        padding: 20px 0 70px;
+        background: linear-gradient(to right, #FBC25A 40%, #fff 40%);
+    }
+
+    &__img {
+        display: block;
+        margin: 20px 0 0 auto;
+        width: 60%;
+        max-width: 100%;
+    }
+    a {
+        text-decoration: none;;
+    }
+
+    &__content {
+
+        &--title {
+            font-size: 35px;
+        }
+    }
+
+    &__reviews {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 300px;
+        margin: 15px 0;
+    }
+
+    &__text {
+        line-height: 22px;
+    }
+
+    &__price {
+        font-weight: bold;
+        font-size: 25px;
+        color: $main-black;
+
+        & span {
+            font-size: 16px;
+        }
+    }
+
+    &__row {
+        width: 320px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 35px 0 12px;
+    }
+
+    &__booknow {
+        font-size: 13px;
+    }
+    &__old-price {
+        text-decoration: line-through;
+        & span {
+            font-size: 12px;
+        }
+    }
+
+    &__button {
+        margin: 40px 0 0 0;
+        & a {
+            text-decoration: none;
+        }
+    }
+
+    &__btn {
+      margin-right: 35px;
+      padding: 15px 40px;
+      font-size: 14px;
+      background: #F5A81B;
+      color: #fff;
+      transition: all .2s linear;
+    }
+
+    &__btn:hover {
+        background-color: $bg-grey;
+        color: $main-black;
+    }
+
+    &__trash {
+        font-size: 15px;
+        font-weight: bold;
+        color: $main-black;
+    }
+
+    &-characteristic {
+        
+    }
+    
+    &-characteristic__title {
+        padding: 15px 0;
+        border-top: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+}

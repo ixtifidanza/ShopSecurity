@@ -22,6 +22,14 @@ body {
     color: $yellow;
 }
 
+.grey {
+    color: $border;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
 .al-center {
     align-items: center;
 }
